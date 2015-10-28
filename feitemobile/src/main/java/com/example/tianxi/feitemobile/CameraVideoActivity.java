@@ -42,6 +42,7 @@ public class CameraVideoActivity extends Activity {
 	private static AndroidCamera aCamera;
 	private boolean streaming;
 	private boolean isTiming = false;
+	private Button mm;
 
 	private Button changeCamera;
 	int whichCamera;//表示正在使用哪一个摄像头
