@@ -119,7 +119,7 @@ public class CameraVideoActivity extends Activity {
 				if (RTMPConnectionUtil.netStream != null) {
 					RTMPConnectionUtil.netStream.close();
 					RTMPConnectionUtil.netStream = null;
-					System.out.println("");
+					System.out.println("nihao");
 				}
 				if (aCamera != null) {
 					aCamera = null;
