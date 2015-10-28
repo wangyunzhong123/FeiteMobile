@@ -119,6 +119,7 @@ public class CameraVideoActivity extends Activity {
 				if (RTMPConnectionUtil.netStream != null) {
 					RTMPConnectionUtil.netStream.close();
 					RTMPConnectionUtil.netStream = null;
+					System.out.println("");
 				}
 				if (aCamera != null) {
 					aCamera = null;
