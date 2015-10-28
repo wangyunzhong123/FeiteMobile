@@ -50,6 +50,7 @@ public class CameraVideoActivity extends Activity {
 	int whichCamera;//表示正在使用哪一个摄像头
 	
 	private Button nn;
+	private Button cc;
 
 
 	@Override
