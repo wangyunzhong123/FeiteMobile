@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.tianxi.feitemobile.Activity.ClassDetailActivity">
+
+    <com.example.tianxi.feitemobile.Myview.TitleLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.tianxi.feitemobile.Myview.TitleLayout>
+
+    <include layout="@layout/class_detail_head"
+        android:id="@+id/class_detail_head_out"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/titleLayout">
+
+    </include>
+
+    <!--横线-->
+    <TextView
+        android:id="@+id/class_detail_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/class_detail_head_out"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/class_detail_likenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_detail_line1"
+        android:padding="5pt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="360 人喜欢"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="904 人收藏"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <!--横线-->
+    <TextView
+        android:id="@+id/class_detail_line2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/class_detail_likenumber"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <TextView
+        android:id="@+id/class_detail_listname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_detail_line2"
+        android:padding="5pt"
+        android:text="动作列表"
+        android:textSize="8pt"/>
+
+    <!--横线-->
+    <TextView
+        android:id="@+id/class_detail_line3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/class_detail_listname"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+
+    <LinearLayout
+        android:id="@+id/class_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#808a87"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/class_detail_loadbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00f"
+            android:clickable="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="下载"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/class_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="#808069"
+        android:layout_below="@id/class_detail_line3"
+        android:layout_above="@id/class_detail_bottom">
+
+    </ListView>
+
+
+</RelativeLayout>

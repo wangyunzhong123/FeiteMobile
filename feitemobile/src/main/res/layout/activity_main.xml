@@ -1,11 +1,140 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tianxi.feitemobile.Activity.MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+<RelativeLayout
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
+    <!-- 顶部 -->
+
+    <RelativeLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainactivity_top_text_height"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:text="课程"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <!-- 底部tab -->
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainactivity_buttom_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:baselineAligned="true">
+
+        <RelativeLayout
+            android:id="@+id/class_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/class_tab_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_know_nor"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/class_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/class_tab_imag"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_tab_1_text"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commune_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/commune_tab_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_wantknow_nor"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/commune_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commune_tab_imag"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_tab_2_text"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/me_tab_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/btn_my_nor"
+                android:contentDescription="@null" />
+
+
+            <TextView
+                android:id="@+id/me_tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/me_tab_imag"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_tab_3_text"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 内容部分， fragment切换 -->
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/top_tab"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="@color/line" />
 </RelativeLayout>
+
+</FrameLayout>

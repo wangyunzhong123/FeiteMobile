@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tianxi.feitemobile.Fragment.Class_MyClassFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.tianxi.feitemobile.Myview.MyListView
+            android:id="@+id/myClassListView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:scrollingCache="true"
+            android:divider="#fff"
+            android:dividerHeight="2dp"
+            android:horizontalSpacing="1pt"
+            android:verticalSpacing="1pt"
+            android:numColumns="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.example.tianxi.feitemobile.Activity.Tab2_ForumActivity">
+
+    <com.example.tianxi.feitemobile.Myview.TitleLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.tianxi.feitemobile.Myview.TitleLayout>
+
+    <TextView
+        android:id="@+id/tab2_forum_createTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:clickable="true"
+        android:text="创建话题"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:background="#04f"/>
+
+    <com.example.tianxi.feitemobile.Myview.MyListView
+        android:id="@+id/tab2_forum_listVIew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="6dp"
+        android:divider="#fff"
+        android:layout_margin="4dp"
+        android:layout_below="@id/titleLayout"
+        android:layout_above="@id/tab2_forum_createTopic"
+        >
+
+    </com.example.tianxi.feitemobile.Myview.MyListView>
+
+</RelativeLayout>

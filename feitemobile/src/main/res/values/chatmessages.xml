@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="messages">
+        <item>你好好你好1</item>
+        <item>你好好你好2</item>
+        <item>你好好你好3</item>
+        <item>你好好你好4</item>
+        <item>你好好你好5</item>
+        <item>你好好你好6</item>
+        <item>你好好你好7</item>
+        <item>你好好你好8</item>
+        <item>你好好你好9</item>
+        <item>你好好你好0</item>
+        <item>你好好你好11</item>
+        <item>你好好你好12</item>
+        <item>你好好你好13</item>
+        <item>你好好你好14</item>
+        <item>你好好你好15</item>
+        <item>你好好你好16</item>
+        <item>你好好你好17</item>
+
+    </string-array>
+
+    <string-array name="tab2_hottopic_list_view_data">
+        <item>你好好你好1</item>
+        <item>你好好你好2</item>
+        <item>你好好你好3</item>
+        <item>你好好你好4</item>
+        <item>你好好你好5</item>
+        <item>你好好你好6</item>
+        <item>你好好你好7</item>
+        <item>你好好你好8</item>
+        <item>你好好你好9</item>
+        <item>你好好你好0</item>
+        <item>你好好你好11</item>
+        <item>你好好你好12</item>
+        <item>你好好你好13</item>
+        <item>你好好你好14</item>
+        <item>你好好你好15</item>
+        <item>你好好你好16</item>
+        <item>你好好你好17</item>
+    </string-array>
+</resources>

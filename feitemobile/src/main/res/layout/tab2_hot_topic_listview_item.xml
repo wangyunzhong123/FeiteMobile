@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/tab2_image_layout_border"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/boutique_my"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="yogi_echo"
+                android:textSize="7pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="09:40"
+                android:textSize="4pt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:singleLine="true"
+        android:textSize="8pt"
+        android:text="一个人，一张垫子，一个瑜伽轮，一面墙，就是你进入瑜伽师姐的全部工具。还有全身心的投入"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="5pt"
+        android:layout_margin="4dp"
+        android:text="很多属性说明: 如果文本是可选择的，让他获取焦点属性说明: 如果文本是可选择的，让他获取焦点而不是将光标移动为文本的开始位置或者末尾位置。属性说明: 如果文本是可选择的，让他获取焦点而不是将光标移动为文本的开始位置或者末尾位置。属性说明: 如果文本是可选择的，让他获取焦点而不是将光标移动为文本的开始位置或者末尾位置。"/>
+
+
+    <!--可能有图片，占位-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/yoga"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/yoga"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/yoga"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="4pt"
+            android:text="42点赞"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="4pt"
+            android:text="47评论"/>
+    </LinearLayout>
+</LinearLayout>

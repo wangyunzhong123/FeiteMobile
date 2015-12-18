@@ -21,6 +21,15 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':vitamio')
+    compile files('libs/commons-lang-2.6.jar')
+    compile files('libs/mina-core-2.0.2.jar')
+    compile files('libs/org.springframework.core-3.0.5.RELEASE.jar')
+    compile files('libs/slf4j-android-1.6.1-RC1.jar')
+    compile files('libs/rtmpclient.jar')
+    compile files('libs/juv-rtmp-client-1.5.16.jar')
     compile 'com.android.support:appcompat-v7:23.0.1'
-    compile files('libs/juv-rtmp-client-1.5.10.jar')
+    compile 'com.android.support:support-v4:23.0.1'
+    compile files('libs/universal-image-loader-1.8.4.jar')
+    compile files('libs/universal-image-loader-1.9.2-with-sources.jar')
 }
