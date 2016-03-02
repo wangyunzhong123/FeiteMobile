@@ -1,9 +1,10 @@
-package com.example.tianxi.feitemobile;
+package com.example.tianxi.getphonenumber;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +13,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ListView listView = (ListView)findViewById(R.id.listview);
+       // list.add
+
     }
 
     @Override
